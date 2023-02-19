@@ -33,7 +33,7 @@ public class automationPracticeForm {
         $("#subjectsContainer").click();
         $("#subjectsInput").setValue("Arts").pressEnter();
         $("#hobbies-checkbox-2").parent().$(byText("Reading")).click();
-        $("#uploadPicture").val("D:\\Alf.png");
+        $("#uploadPicture").uploadFromClasspath("pictures/Alf.png");
         $("#currentAddress").setValue("Lipchanskogo 5, apartment 22");
         $("#state").click();
         $("#stateCity-wrapper").$(byText("NCR")).click();

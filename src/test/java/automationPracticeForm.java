@@ -24,7 +24,7 @@ public class automationPracticeForm {
         $("#firstName").setValue("Maria");
         $("#lastName").setValue("Nour");
         $("#userEmail").setValue("MN@mail.ru");
-        $("#gender-radio-2").sendKeys(" ");
+        $("#genterWrapper").$(byText("Female")).click();
         $("#userNumber").setValue("9377777777");
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-dropdown-container").$(byText("April")).click();

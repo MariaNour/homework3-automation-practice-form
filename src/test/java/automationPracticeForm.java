@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class authomationPracticeForm {
+public class automationPracticeForm {
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = "1920x1080";
@@ -22,6 +22,5 @@ public class authomationPracticeForm {
         $("#firstName").setValue("Maria");
         $("#lastName").setValue("Nour");
         $("#userEmail").setValue("MN@mail.ru");
-        $("#genterWrapper").$(byText("Female")).click();
-    }
+       }
 }

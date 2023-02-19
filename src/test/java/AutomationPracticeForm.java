@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class AutomationPracticeForm {
     @BeforeAll
@@ -17,7 +16,8 @@ public class AutomationPracticeForm {
     @Test
     void fillFormTest() {
         open("/automation-practice-form");
-
+        executeJavaScript("$('#fixedban').remove()");
+        executeJavaScript("$('footer').remove()");
         $("#firstName").setValue("Maria");
         $("#lastName").setValue("Nour");
         $("#userEmail").setValue("MN@mail.ru");
